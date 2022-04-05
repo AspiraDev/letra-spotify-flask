@@ -1,0 +1,48 @@
+<script src="https://kit.fontawesome.com/48764efa36.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="../static/css/style.css" rel="stylesheet">
+
+<style>
+
+</style>
+
+<h1>Cole o link da sua playlist spotify</h1>
+
+
+  
+<form method="POST">
+
+        <div class="form__field">
+          <input type="text" class="form__input" name="name" pattern=".{6,}" required>
+          <span class="icon"></span>
+        </div>
+    
+
+</form>
+
+<div id="album-rotator">
+<div id="album-rotator-holder">
+
+
+    
+  {%for i in range(0, len)%}
+  
+  <a target="_top" class="album-item" href="letra/{{i}}">
+    <div id="container"> 
+    <span class="album-details">
+        <span class="title">{{musica[i]}}</span>
+        <span class="subtitle">{{album[i]}}</span>
+        <span class="subtext">{{artista[i]}}</span>
+    </span>
+    <img src="{{imagem[i]}}" width="320">
+    </div>
+</a>
+{%endfor%}
+
+
+</div>
+</div>
+
+
+

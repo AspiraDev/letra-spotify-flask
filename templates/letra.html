@@ -1,0 +1,44 @@
+<script src="https://kit.fontawesome.com/48764efa36.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="../static/css/letra.css" rel="stylesheet">
+
+<style>
+
+</style>
+
+<!-- <h1>Letra</h1><br> -->
+
+
+  
+
+<div id="album-rotator">
+<div id="album-rotator-holder">
+
+
+    
+
+  
+
+    <div id="container"> 
+        <img src="{{imagem}}" width="320"><br>
+    <span class="texto">
+        <span class="title">{{musica}}</span><br>
+        <span class="subtitle">{{album}}</span><br>
+        <span class="subtext">{{artista}}</span><br><br><br>
+    </span>
+
+    {% autoescape false %}
+    {{letra}}
+    {% endautoescape %}
+    
+    </div>
+
+
+
+
+</div>
+</div>
+
+
+
