@@ -12,9 +12,10 @@ pip install spotipy
 
 ## Configuração
 Adiciona seu ID e sua KEY spotify e vagalume no arquivo `app.py` 
+```
 Spotify: https://developer.spotify.com/dashboard/applications
 Vagalume: https://auth.vagalume.com.br/settings/api/
-
+```
 ```
 CLIENTE_ID='SEU ID SPOTIFY'
 KEY_SPOTIFY='SUA KEY SPOTIFY'
